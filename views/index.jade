@@ -8,20 +8,20 @@ block content
     form(action="/" method="post")
       .form-group
         label(for="country") Country
-        input(type="text", placeholder="Country" name="country").form-control#country
+        input(type="text", placeholder="Country" name="country", value="#{country}").form-control#country
 
       .form-group
         label(for="state") state
-        input(type="text", placeholder="state" name="state").form-control#state
+        input(type="text", placeholder="state" name="state", value="#{state}").form-control#state
 
       .form-group
         label(for="city") city
-        input(type="text", placeholder="city" name="city").form-control#city
+        input(type="text", placeholder="city" name="city", value="#{city}").form-control#city
 
       .form-group
         label(for="venue") venue
-        input(type="text", placeholder="venue" name="venue").form-control#venue
+        input(type="text", placeholder="venue" name="venue", value="#{venue}").form-control#venue
 
-      <button type="submit" class="btn btn-default">Submit result</button>
+      <button type="submit" class="btn btn-default">#{buttonText}</button>
 
   

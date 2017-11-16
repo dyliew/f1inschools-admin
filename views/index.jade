@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .container
+    h1= 'f1 in schools admin page'
+    p Welcome
+
+    form(action="/" method="post")
+      .form-group
+        label(for="country") Country
+        input(type="text", placeholder="Country" name="country").form-control#country
+
+      .form-group
+        label(for="state") state
+        input(type="text", placeholder="state" name="state").form-control#state
+
+      .form-group
+        label(for="city") city
+        input(type="text", placeholder="city" name="city").form-control#city
+
+      .form-group
+        label(for="venue") venue
+        input(type="text", placeholder="venue" name="venue").form-control#venue
+
+      <button type="submit" class="btn btn-default">Submit result</button>
+
+  
